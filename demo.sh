@@ -5,6 +5,11 @@ function git_branch() {
 }
 
 alias mr="open 'http://localhost/jhkuperus/$(basename `pwd`)/merge_requests/new?merge_request%5Bsource_branch%5D=$(git_branch)'"
-alias ci="open 'http://localhost:8000/job/$(basename `pwd`)'"
+alias ci="open 'http://localhost:8081/job/$(basename `pwd`)'"
 
 export SESSION_DANGER="DEMO"
+
+clear
+
+
+
