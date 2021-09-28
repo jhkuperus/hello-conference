@@ -5,7 +5,7 @@ function git_branch() {
 }
 
 alias pr="open 'https://github.com/jhkuperus/$(basename `pwd`)/pull/new/$(git_branch)'"
-alias ci="open 'http://localhost:8081/job/$(basename `pwd`)'"
+alias ci="open 'https://github.com/jhkuperus/$(basename `pwd`)/actions'"
 
 export SESSION_DANGER="DEMO"
 
