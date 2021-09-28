@@ -4,7 +4,7 @@ function git_branch() {
   [[ -n $BRANCH ]] && echo $BRANCH || echo '?'
 }
 
-alias mr="open 'http://localhost/jhkuperus/$(basename `pwd`)/merge_requests/new?merge_request%5Bsource_branch%5D=$(git_branch)'"
+alias pr="open 'https://github.com/jhkuperus/$(basename `pwd`)/pull/new/$(git_branch)'"
 alias ci="open 'http://localhost:8081/job/$(basename `pwd`)'"
 
 export SESSION_DANGER="DEMO"
